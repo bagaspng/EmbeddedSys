@@ -36,3 +36,30 @@ void loop() {
 
   delay(2000);  // Baca tiap 2 detik
 }
+
+
+//sensor NTC (resistance value)
+const int ntcPin = A0;  // pin analog NTC
+float ntcVal;
+float suhuC;
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  ntcVal = analogRead(ntcPin); // nilai dari 0 - 1023
+
+  // Konversi nilai analog ke suhu (perlu kalibrasi, ini contoh kasar)
+  float voltage = ntcVal * 5.0 / 1023.0;
+
+  // Misal menggunakan rumus sederhana (harus disesuaikan dengan datasheet NTC)
+  suhuC = (voltage - 0.5) * 100; // contoh rumus jika pakai LM35 (bukan NTC murni)
+
+  Serial.print("Suhu (C): ");
+  Serial.println(suhuC);
+
+  delay(1000);
+}
+
+
