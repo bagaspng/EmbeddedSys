@@ -301,42 +301,7 @@ Contributions welcome! Here's how to contribute:
 6. **Push to branch** (`git push origin feature/new-sensor`)
 7. **Open Pull Request**
 
-### 📋 **Contribution Guidelines**
-
-```cpp
-// Code style guidelines
-// 1. Use meaningful variable names
-int temperatureSensor = A0;  // Good
-int a0 = A0;                 // Bad
-
-// 2. Add comments for complex logic
-if (sensorValue < threshold) {
-    // Emergency shutdown procedure
-    digitalWrite(emergencyRelay, LOW);
-}
-
-// 3. Include pin definitions at top
-#define SENSOR_PIN A0
-#define RELAY_PIN 2
-#define LED_PIN 13
-```
-
-### 💡 **Project Ideas for Contributors**
-- [ ] **Ultrasonic Distance Sensor** projects
-- [ ] **Motion Detection** systems
-- [ ] **Environmental Monitoring** (humidity, pressure)
-- [ ] **Security Systems** (PIR, magnetic sensors)
-- [ ] **Motor Control** projects (stepper, DC motors)
-- [ ] **Communication** projects (RF, Bluetooth, LoRa)
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
-
-```
-MIT License - Feel free to use, modify, and distribute
-Commercial use allowed with attribution
-```
+---
 
 ## 👨‍💻 Author
 
@@ -373,12 +338,13 @@ Need help? Join our community!
 
 **⚡ Building the Future with Embedded Systems ⚡**
 
-[![GitHub stars](https://img.shields.io/github/stars/bagaspng/EmbeddedSys? style=social)](https://github.com/bagaspng/EmbeddedSys/stargazers)
+[![GitHub stars](https://img.shields.io/github/stars/bagaspng/EmbeddedSys?style=social)](https://github.com/bagaspng/EmbeddedSys/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/bagaspng/EmbeddedSys?style=social)](https://github.com/bagaspng/EmbeddedSys/network/members)
 
 **Made with ❤️ for the Embedded Systems Community**
 
 </div>
+
 
 
 
