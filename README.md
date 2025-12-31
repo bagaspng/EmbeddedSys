@@ -295,10 +295,6 @@ void sendSensorData(float sensorValue) {
 **Bagas Pangestu** ([@bagaspng](https://github.com/bagaspng))
 
 
-## 📊 Repository Stats
-
-![Language Stats](https://github-readme-stats.vercel.app/api/top-langs/?username=bagaspng&repo=EmbeddedSys&layout=compact&theme=tokyonight)
-
 ---
 
 <div align="center">
@@ -311,6 +307,7 @@ void sendSensorData(float sensorValue) {
 **Made with ❤️ for the Embedded Systems Community**
 
 </div>
+
 
 
 
