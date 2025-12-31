@@ -1,4 +1,4 @@
-# ⚡ EmbeddedSystem - Flame Sensor
+# 🔥 EmbeddedSystem - Flame And Gas Sensor
 
 > Koleksi proyek sistem tertanam (embedded systems) menggunakan Arduino dengan fokus pada sensor monitoring dan safety systems
 
@@ -288,45 +288,12 @@ void sendSensorData(float sensorValue) {
 - [Sensor Integration Patterns](https://randomnerdtutorials.com/)
 - [IoT Development Best Practices](https://aws.amazon.com/iot-core/getting-started/)
 
-## 🤝 Contributing
-
-Contributions welcome! Here's how to contribute:
-
-### 🔄 **Contribution Steps**
-1. **Fork** the repository
-2. **Create feature branch** (`git checkout -b feature/new-sensor`)
-3. **Add your embedded project** with proper documentation
-4. **Test thoroughly** on actual hardware
-5. **Commit changes** (`git commit -m 'Add ultrasonic sensor project'`)
-6. **Push to branch** (`git push origin feature/new-sensor`)
-7. **Open Pull Request**
-
 ---
 
 ## 👨‍💻 Author
 
 **Bagas Pangestu** ([@bagaspng](https://github.com/bagaspng))
 
-- 📧 Email: bagaspangestu0407@gmail.com
-- 💼 LinkedIn: [Bagas Pangestu](https://linkedin.com/in/bagaspng)
-- 🌐 Portfolio: [bagaspng.dev](https://bagaspng.dev)
-- 🎓 Expertise: Embedded Systems, IoT, Arduino Programming
-
-## 🙏 Acknowledgments
-
-- **Arduino Community** - For the amazing ecosystem and libraries
-- **Sensor Manufacturers** - For comprehensive datasheets and examples
-- **Open Source Contributors** - For inspiration and shared knowledge
-- **Embedded Systems Community** - For best practices and guidance
-
-## 📞 Support & Community
-
-Need help? Join our community! 
-
-- 📖 **Wiki**:  [Project Wiki](https://github.com/bagaspng/EmbeddedSys/wiki)
-- 🐛 **Issues**: [Report Bugs](https://github.com/bagaspng/EmbeddedSys/issues)
-- 💬 **Discussions**: [Q&A Forum](https://github.com/bagaspng/EmbeddedSys/discussions)
-- 📧 **Direct Contact**: bagaspangestu0407@gmail.com
 
 ## 📊 Repository Stats
 
@@ -344,6 +311,7 @@ Need help? Join our community!
 **Made with ❤️ for the Embedded Systems Community**
 
 </div>
+
 
 
 
