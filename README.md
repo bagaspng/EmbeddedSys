@@ -275,63 +275,6 @@ void sendSensorData(float sensorValue) {
 }
 ```
 
-## 🐛 Troubleshooting
-
-### ❓ **Common Issues**
-
-**Q:  Sensor readings are unstable? **
-```cpp
-// Add moving average filter
-const int SAMPLES = 10;
-int readings[SAMPLES];
-int readIndex = 0;
-int total = 0;
-
-int getStableReading(int pin) {
-    total -= readings[readIndex];
-    readings[readIndex] = analogRead(pin);
-    total += readings[readIndex];
-    readIndex = (readIndex + 1) % SAMPLES;
-    
-    return total / SAMPLES;
-}
-```
-
-**Q: Relay not switching properly?**
-```cpp
-// Add delay and verification
-void safeRelayControl(int pin, bool state) {
-    digitalWrite(pin, state ?  HIGH : LOW);
-    delay(50);  // Allow relay to settle
-    
-    // Verify state if possible
-    Serial.print("Relay state: ");
-    Serial.println(state ?  "ON" : "OFF");
-}
-```
-
-**Q: Serial communication issues?**
-```cpp
-// Check baud rate and add connection test
-void setup() {
-    Serial.begin(9600);
-    while (!Serial) {
-        ; // Wait for serial connection
-    }
-    Serial.println("🚀 System initialized");
-}
-```
-
-## 🔮 Future Enhancements
-
-- [ ] **Web Dashboard** - ESP32-based web interface
-- [ ] **Mobile App** - Android/iOS monitoring app
-- [ ] **Database Logging** - MySQL/InfluxDB integration
-- [ ] **Machine Learning** - Predictive maintenance
-- [ ] **Multi-Sensor Fusion** - Combine multiple sensor data
-- [ ] **Wireless Mesh Network** - Multiple sensor nodes
-- [ ] **Voice Alerts** - Text-to-speech notifications
-- [ ] **Cloud Integration** - AWS IoT / Google Cloud
 
 ## 📚 Learning Resources
 
@@ -436,5 +379,6 @@ Need help? Join our community!
 **Made with ❤️ for the Embedded Systems Community**
 
 </div>
+
 
 
