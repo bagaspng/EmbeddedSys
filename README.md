@@ -275,81 +275,6 @@ void sendSensorData(float sensorValue) {
 }
 ```
 
-## 🛡️ Safety & Best Practices
-
-### ⚠️ **Safety Guidelines**
-
-1. **Power Management**
-   - Always use appropriate power supplies
-   - Add fuses for high-current applications
-   - Implement emergency shutdown procedures
-
-2. **Sensor Placement**
-   - Install gas sensors in proper ventilation areas
-   - Mount flame sensors away from heat sources
-   - Ensure temperature sensors are not in direct sunlight
-
-3. **Testing Procedures**
-   ```cpp
-   // Always test emergency systems
-   void testEmergencySystem() {
-       Serial.println("🧪 Testing emergency systems...");
-       digitalWrite(relayPin, LOW);   // Test relay
-       delay(1000);
-       digitalWrite(relayPin, HIGH);  // Restore normal
-       Serial.println("✅ Emergency test completed");
-   }
-   ```
-
-
-## 🚀 Advanced Features
-
-### 📊 **Data Logging**
-
-```cpp
-// Log sensor data to SD card or EEPROM
-#include <EEPROM.h>
-
-void logSensorData(int gasValue, int flameValue, float temperature) {
-    static int logIndex = 0;
-    
-    EEPROM.write(logIndex, gasValue);
-    EEPROM.write(logIndex + 1, flameValue);
-    EEPROM.write(logIndex + 2, (int)temperature);
-    
-    logIndex = (logIndex + 3) % 1024;  // Circular buffer
-}
-```
-
-### 🔔 **Alert System**
-
-```cpp
-// Multi-level alert system
-enum AlertLevel {
-    NORMAL,
-    WARNING, 
-    CRITICAL,
-    EMERGENCY
-};
-
-void handleAlert(AlertLevel level) {
-    switch(level) {
-        case WARNING:
-            digitalWrite(LED_YELLOW, HIGH);
-            tone(BUZZER_PIN, 1000, 500);
-            break;
-        case CRITICAL:
-            digitalWrite(LED_RED, HIGH);
-            tone(BUZZER_PIN, 2000, 1000);
-            break;
-        case EMERGENCY:
-            // All alerts + shutdown
-            activateEmergencyProtocol();
-            break;
-    }
-}
-```
-
 ## 🐛 Troubleshooting
 
 ### ❓ **Common Issues**
@@ -511,4 +436,5 @@ Need help? Join our community!
 **Made with ❤️ for the Embedded Systems Community**
 
 </div>
+
 
