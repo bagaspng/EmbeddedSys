@@ -1,11 +1,10 @@
-# ⚡ EmbeddedSys - Arduino & Embedded Systems Collection
+# ⚡ EmbeddedSystem - Flame Sensor
 
 > Koleksi proyek sistem tertanam (embedded systems) menggunakan Arduino dengan fokus pada sensor monitoring dan safety systems
 
 [![C++](https://img.shields.io/badge/C++-100%25-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)](https://github.com/bagaspng/EmbeddedSys)
 [![Arduino](https://img.shields.io/badge/Arduino-Compatible-00979D?style=flat-square&logo=arduino&logoColor=white)](https://github.com/bagaspng/EmbeddedSys)
 [![Embedded](https://img.shields.io/badge/Embedded-Systems-success?style=flat-square&logo=microchip&logoColor=white)](https://github.com/bagaspng/EmbeddedSys)
-[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=flat-square)](LICENSE)
 
 ## 📋 Deskripsi
 
@@ -302,25 +301,6 @@ void sendSensorData(float sensorValue) {
    }
    ```
 
-### 🔧 **Code Best Practices**
-
-```cpp
-// Use constants for pin definitions
-const int FLAME_SENSOR_PIN = A0;
-const int RELAY_PIN = 2;
-const int LED_NORMAL = 13;
-const int LED_ALERT = 12;
-
-// Implement error handling
-bool readSensorSafely(int pin, int &value) {
-    value = analogRead(pin);
-    if (value < 0 || value > 1023) {
-        Serial.println("❌ Sensor reading error!");
-        return false;
-    }
-    return true;
-}
-```
 
 ## 🚀 Advanced Features
 
@@ -531,3 +511,4 @@ Need help? Join our community!
 **Made with ❤️ for the Embedded Systems Community**
 
 </div>
+
