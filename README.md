@@ -99,12 +99,7 @@ EmbeddedSys adalah kumpulan proyek embedded systems yang dikembangkan dengan Ard
 // Tools > Programmer > Arduino as ISP
 ```
 
-### 📥 **Clone Repository**
 
-```bash
-git clone https://github.com/bagaspng/EmbeddedSys.git
-cd EmbeddedSys
-```
 
 ### ⚡ **Upload Sketch**
 
@@ -307,6 +302,7 @@ void sendSensorData(float sensorValue) {
 **Made with ❤️ for the Embedded Systems Community**
 
 </div>
+
 
 
 
