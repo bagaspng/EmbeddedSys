@@ -74,30 +74,7 @@ EmbeddedSys adalah kumpulan proyek embedded systems yang dikembangkan dengan Ard
 - **Servo Motor**: SG90 micro servo
 - **Jumper Wires & Breadboard**
 
-## 📦 Installation & Setup
 
-### 🔧 **Arduino IDE Setup**
-
-1. **Install Arduino IDE** (version 2.0+)
-```bash
-# Download dari:  https://www.arduino.cc/en/software
-```
-
-2. **Install Required Libraries**
-```cpp
-// Buka Library Manager (Ctrl+Shift+I)
-// Install libraries berikut:
-- DHT sensor library (by Adafruit)
-- Servo library (built-in)
-- Wire library (built-in)
-```
-
-3. **Board Configuration**
-```cpp
-// Tools > Board > Arduino Uno (atau board yang digunakan)
-// Tools > Port > COM Port yang sesuai
-// Tools > Programmer > Arduino as ISP
-```
 
 
 
@@ -152,48 +129,7 @@ NTC Thermistor:
 └── GND ─────────── NTC other terminal
 ```
 
-## 💻 Code Examples & Usage
 
-### 🌬️ **Air Quality Monitoring**
-
-```cpp
-// Threshold customization
-if (nilaiGas > 400) {  // Adjust threshold as needed
-    Serial.println("⚠️ Gas terdeteksi!");
-    // Add buzzer or LED alert
-    digitalWrite(BUZZER_PIN, HIGH);
-} else {
-    Serial.println("✅ Udara bersih.");
-    digitalWrite(BUZZER_PIN, LOW);
-}
-```
-
-### 🔥 **Fire Detection Logic**
-
-```cpp
-// Flame sensor reading (lower value = flame detected)
-if (apiTerbaca < 500) {  
-    // Fire detected - Emergency shutdown
-    digitalWrite(relayPin, LOW);  // Cut power
-    Serial.println("KEBAKARAN TERDETEKSI! MEMUTUS ALIRAN LISTRIK.");
-    // Add additional emergency protocols
-    activateAlarm();
-    sendEmergencyAlert();
-}
-```
-
-### 🌡️ **Temperature-Based Control**
-
-```cpp
-// Temperature-controlled servo operation
-if (suhu > 30) {
-    myServo.write(90);   // Open ventilation
-    Serial. println("🔥 Suhu panas - Ventilasi dibuka");
-} else if (suhu < 25) {
-    myServo.write(0);    // Close ventilation  
-    Serial.println("❄️ Suhu dingin - Ventilasi ditutup");
-}
-```
 
 ## 📊 Serial Monitor Output
 
@@ -302,6 +238,7 @@ void sendSensorData(float sensorValue) {
 **Made with ❤️ for the Embedded Systems Community**
 
 </div>
+
 
 
 
