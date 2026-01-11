@@ -75,9 +75,6 @@ EmbeddedSys adalah kumpulan proyek embedded systems yang dikembangkan dengan Ard
 - **Jumper Wires & Breadboard**
 
 
-
-
-
 ### ⚡ **Upload Sketch**
 
 1.  Buka file `.ino` di Arduino IDE
@@ -186,25 +183,6 @@ const int FIRE_CHECK_INTERVAL = 500;      // 0.5 second
 const int TEMP_READING_INTERVAL = 2000;   // 2 seconds
 ```
 
-### 📡 **Adding WiFi Connectivity**
-
-```cpp
-// For ESP32/ESP8266 projects
-#include <WiFi.h>
-#include <HTTPClient.h>
-
-// Send sensor data to server
-void sendSensorData(float sensorValue) {
-    HTTPClient http;
-    http.begin("http://your-server.com/api/sensors");
-    http.addHeader("Content-Type", "application/json");
-    
-    String payload = "{\"sensor\": \"" + String(sensorValue) + "\"}";
-    int httpResponse = http.POST(payload);
-    
-    http.end();
-}
-```
 
 
 ## 📚 Learning Resources
@@ -238,6 +216,7 @@ void sendSensorData(float sensorValue) {
 **Made with ❤️ for the Embedded Systems Community**
 
 </div>
+
 
 
 
