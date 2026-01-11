@@ -184,19 +184,6 @@ const int TEMP_READING_INTERVAL = 2000;   // 2 seconds
 ```
 
 
-
-## 📚 Learning Resources
-
-### 📖 **Documentation**
-- [Arduino Official Documentation](https://www.arduino.cc/reference/en/)
-- [ESP32 Programming Guide](https://docs.espressif.com/projects/esp-idf/en/latest/)
-- [Sensor Interfacing Tutorials](https://learn.adafruit.com/)
-
-### 🎓 **Tutorials**
-- [Basic Arduino Programming](https://www.arduino.cc/en/Tutorial/HomePage)
-- [Sensor Integration Patterns](https://randomnerdtutorials.com/)
-- [IoT Development Best Practices](https://aws.amazon.com/iot-core/getting-started/)
-
 ---
 
 ## 👨‍💻 Author
@@ -216,6 +203,7 @@ const int TEMP_READING_INTERVAL = 2000;   // 2 seconds
 **Made with ❤️ for the Embedded Systems Community**
 
 </div>
+
 
 
 
